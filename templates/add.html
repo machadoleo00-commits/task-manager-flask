@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Task manager</title>
+    </head>
+    <body>
+        {%  extends 'base.html' %}
+        {% block main %}
+        <p>some content of the about page</p>
+        <form action ='{{url_for('add')}}' method='POST'>
+            {{ form.csrf_token() }}
+            {{ form.title.label }}
+            {{ form.title }}
+            {{ form.submit }}
+        </form>
+
+        {% if title %}
+            <h1>{{ title }}</h1>
+        {% endif %}
+
+        {% endblock main %}
+    </body>
+</html>
