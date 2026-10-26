@@ -23,7 +23,7 @@ Aplicação web simples para cadastrar e listar tarefas, feita com Flask durante
 1. Clone o repositório:
 
 ```
-git clone https://github.com/machadoleo00/task-manager-flask.git
+git clone https://github.com/machadoleo00-commits/task-manager-flask.git
 cd task-manager-flask
 ```
 
